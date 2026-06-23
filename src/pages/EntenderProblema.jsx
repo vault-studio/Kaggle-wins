@@ -1,6 +1,7 @@
 import PageHeader from '../components/PageHeader'
 import Callout from '../components/Callout'
 import Figure from '../components/Figure'
+import MetricGlossary from '../components/MetricGlossary'
 
 function ConfusionMatrixSVG() {
   return (
@@ -170,6 +171,13 @@ export default function EntenderProblema() {
       <Figure caption="Cada familia de problema trae consigo sus métricas y arquitecturas habituales.">
         <ProblemTypesSVG />
       </Figure>
+
+      <h2>Glosario rápido de métricas por tipo de problema</h2>
+      <p>
+        No hace falta dominarlas todas: solo identifica en qué categoría cae tu competición
+        y revisa la definición de la métrica que estés usando.
+      </p>
+      <MetricGlossary />
 
       <h2>4. Revisa tamaño de datos, datos externos y formato de envío</h2>
       <ul>
