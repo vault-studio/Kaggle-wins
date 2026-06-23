@@ -1,0 +1,25 @@
+.sl-table input[type="text"],
+.sl-table input:not([type]) {
+  width: 100%;
+  font-size: 13px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.sl-table td {
+  min-width: 90px;
+}
+
+.sl-table td:first-child {
+  min-width: 220px;
+}
+
+.sl-hint {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 600;
+}

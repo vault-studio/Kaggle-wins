@@ -1,0 +1,70 @@
+.sv-uploads {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.sv-uploads .autoeda-copy {
+  margin-top: 0;
+}
+
+.sv-uploads .autoeda-copy:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.sv-results {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sv-results li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.sv-ok {
+  border-color: rgba(60, 180, 90, 0.4) !important;
+}
+
+.sv-fail {
+  border-color: rgba(230, 80, 60, 0.5) !important;
+}
+
+.sv-icon {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.sv-ok .sv-icon {
+  color: #2f9e44;
+}
+
+.sv-fail .sv-icon {
+  color: #e03131;
+}
+
+.sv-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.sv-detail {
+  font-size: 12.5px;
+  color: var(--text);
+  margin-top: 2px;
+  font-family: var(--mono);
+  word-break: break-word;
+}
