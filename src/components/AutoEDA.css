@@ -1,0 +1,214 @@
+.autoeda {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  background: var(--code-bg);
+  margin: 16px 0 28px;
+}
+
+.autoeda-upload {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.autoeda-filebtn {
+  background: var(--accent);
+  color: white;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 16px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.autoeda-filename {
+  font-size: 13px;
+  color: var(--text-h);
+  font-family: var(--mono);
+}
+
+.autoeda-note {
+  flex-basis: 100%;
+  font-size: 12.5px;
+  color: var(--text);
+  margin: 4px 0 0;
+}
+
+.autoeda-target {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0;
+  font-size: 14px;
+}
+
+.autoeda-target select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 13.5px;
+}
+
+.autoeda-table-wrap {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.autoeda-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  background: var(--bg);
+}
+
+.autoeda-table th {
+  text-align: left;
+  padding: 8px 10px;
+  background: var(--bg-sidebar, var(--code-bg));
+  border-bottom: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.autoeda-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.autoeda-table tr.is-target {
+  background: var(--accent-bg);
+}
+
+.col-name {
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--text-h);
+  white-space: nowrap;
+}
+
+.target-badge {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.cell-warn {
+  color: #e6a01e;
+  font-weight: 600;
+}
+
+.cell-danger {
+  color: #e03131;
+  font-weight: 600;
+}
+
+.col-issues {
+  min-width: 200px;
+}
+
+.issue {
+  font-size: 12px;
+  margin-bottom: 3px;
+  cursor: help;
+}
+
+.issue-high {
+  color: #e03131;
+}
+.issue-medium {
+  color: #e6a01e;
+}
+.issue-low {
+  color: var(--text);
+}
+.issue-ok {
+  color: #2f9e44;
+  font-size: 12px;
+}
+
+.action-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 150px;
+}
+
+.action-controls select {
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.muted {
+  font-size: 12px;
+  color: var(--text);
+  font-style: italic;
+}
+
+.autoeda-codebox {
+  margin-top: 20px;
+}
+
+.autoeda-tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.autoeda-tabs button {
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 7px 7px 0 0;
+  border: 1px solid var(--border);
+  border-bottom: none;
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.autoeda-tabs button.active {
+  background: var(--text-h);
+  color: var(--bg);
+  font-weight: 600;
+}
+
+.autoeda-code {
+  background: #1e1e2e;
+  color: #e2e2e8;
+  padding: 16px;
+  border-radius: 0 8px 8px 8px;
+  overflow-x: auto;
+  font-size: 12.5px;
+  font-family: var(--mono);
+  line-height: 150%;
+  max-height: 420px;
+}
+
+.autoeda-copy {
+  margin-top: 8px;
+  font-size: 13px;
+  padding: 7px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}

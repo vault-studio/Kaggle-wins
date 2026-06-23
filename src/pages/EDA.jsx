@@ -1,6 +1,7 @@
 import PageHeader from '../components/PageHeader'
 import Callout from '../components/Callout'
 import Figure from '../components/Figure'
+import AutoEDA from '../components/AutoEDA'
 
 function MissingValuesSVG() {
   const cols = [
@@ -190,6 +191,15 @@ export default function EDA() {
         Antes de perder horas redescubriendo algo, revisa los Notebooks y Discussions más votados.
         En casi toda competición alguien ya documentó columnas raras, leakage conocido o trucos del dataset.
       </p>
+
+      <h2>Analiza tu dataset y genera el código</h2>
+      <p>
+        Sube tu <code>train.csv</code> y la herramienta detecta el tipo de cada columna, los nulos,
+        la cardinalidad y posibles problemas, proponiendo una estrategia por defecto que puedes
+        ajustar columna por columna. Al final genera el código Python (pandas + scikit-learn)
+        listo para copiar.
+      </p>
+      <AutoEDA />
 
       <h2>Checklist antes de pasar al baseline</h2>
       <ul>
