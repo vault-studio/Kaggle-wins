@@ -1,10 +1,12 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
 import EntenderProblema from './pages/EntenderProblema'
+import EDA from './pages/EDA'
 import Placeholder from './pages/Placeholder'
 import { phases } from './phases'
 
-const placeholderPhases = phases.filter((p) => p.slug !== 'entender-problema')
+const builtSlugs = ['entender-problema', 'eda']
+const placeholderPhases = phases.filter((p) => !builtSlugs.includes(p.slug))
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<Navigate to="/entender-problema" replace />} />
         <Route path="/entender-problema" element={<EntenderProblema />} />
+        <Route path="/eda" element={<EDA />} />
         {placeholderPhases.map((p) => (
           <Route
             key={p.slug}
