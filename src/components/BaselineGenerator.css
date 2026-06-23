@@ -33,3 +33,34 @@
   color: var(--text-h);
   font-family: var(--mono);
 }
+
+.cv-type-picker {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.cv-type-btn {
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cv-type-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.cv-hint {
+  font-size: 13px;
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 16px;
+}
