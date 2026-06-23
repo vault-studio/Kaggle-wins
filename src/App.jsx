@@ -5,10 +5,11 @@ import EDA from './pages/EDA'
 import Baseline from './pages/Baseline'
 import Validacion from './pages/Validacion'
 import FeatureEngineering from './pages/FeatureEngineering'
+import Ensembling from './pages/Ensembling'
 import Placeholder from './pages/Placeholder'
 import { phases } from './phases'
 
-const builtSlugs = ['entender-problema', 'eda', 'baseline', 'validacion', 'feature-engineering']
+const builtSlugs = ['entender-problema', 'eda', 'baseline', 'validacion', 'feature-engineering', 'ensembling']
 const placeholderPhases = phases.filter((p) => !builtSlugs.includes(p.slug))
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/baseline" element={<Baseline />} />
         <Route path="/validacion" element={<Validacion />} />
         <Route path="/feature-engineering" element={<FeatureEngineering />} />
+        <Route path="/ensembling" element={<Ensembling />} />
         {placeholderPhases.map((p) => (
           <Route
             key={p.slug}
