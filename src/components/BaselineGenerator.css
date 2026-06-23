@@ -1,0 +1,35 @@
+.baseline-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 700px) {
+  .baseline-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.baseline-gen .field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.baseline-gen .field label {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.baseline-gen .field select,
+.baseline-gen .field input {
+  font-size: 13px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font-family: var(--mono);
+}
